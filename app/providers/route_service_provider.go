@@ -12,6 +12,9 @@ type RouteServiceProvider struct {
 }
 
 func (receiver *RouteServiceProvider) Register(app foundation.Application) {
+	app.Singleton("inertia", func(app foundation.Application) (any, error) {
+		return http.InertiaStart(), nil
+	})
 }
 
 func (receiver *RouteServiceProvider) Boot(app foundation.Application) {

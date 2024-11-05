@@ -2,3 +2,5 @@
 .DS_Store
 .env
 storage/framework
+node_modules/
+public/hot

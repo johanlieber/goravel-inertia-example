@@ -1,6 +1,8 @@
 module goravel
 
-go 1.21
+go 1.23
+
+toolchain go1.23.2
 
 require (
 	github.com/gin-gonic/gin v1.10.0
@@ -129,6 +131,7 @@ require (
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5 // indirect
 	github.com/rivo/uniseg v0.4.7 // indirect
 	github.com/robfig/cron/v3 v3.0.1 // indirect
+	github.com/romsar/gonertia v1.3.4 // indirect
 	github.com/rotisserie/eris v0.5.4 // indirect
 	github.com/rs/cors v1.11.0 // indirect
 	github.com/russross/blackfriday/v2 v2.1.0 // indirect
