@@ -3,15 +3,15 @@ import { Link } from "inertia-adapter-solid";
 import { Show } from "solid-js";
 import { Title } from "@solidjs/meta"
 
-const Home = (props: { user: { name: string; logged_in: boolean; } }) => {
-  // const user = () => props.user;
+const Home = (props: {user: string;}) => {
+  const user = () => props.user;
   return (
     <>
       <Title>HomePage</Title>
       <main class="flex min-h-screen flex-col items-center justify-center">
         <div class="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
           <div class="flex flex-col items-center gap-2">
-            Home
+            Home : {user()}
           </div>
         </div>
       </main>
